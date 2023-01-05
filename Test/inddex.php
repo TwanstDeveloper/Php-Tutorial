@@ -118,9 +118,17 @@ echo"<hr>";
 
 
 
-
-
-
-
+function twanst(){
+   for($i=0;$i<=9;$i++){
+    echo"Twanst Developer <br>";
+   }
+}
+twanst();
+echo"<hr>";
+function result($q,$l){
+echo $q+$l;
+}
+result(3,4);
+echo"<hr>";
 
 ?>
