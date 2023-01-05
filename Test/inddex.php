@@ -73,5 +73,21 @@ if($x>$f || $x>$r){
     echo "All Number Equail";
 }
 echo"<hr>";
-
+// wriet Program Mark Students
+$p=55;
+if($p>=0 && $p<50){
+    echo"Faild";
+}elseif($p>=50 && $p<60){
+    echo"Fair";
+}elseif($p>=60 && $p<70){
+    echo"Medium";
+}elseif($p>=70&& $p<=80){
+    echo"Good";
+}elseif($p>=80&& $p<90){
+    echo"Very Good";
+}elseif($p>=90&& $p<=100){
+    echo"Excel";
+}else{
+    echo"Erro Just Number InPut";
+}
 ?>
