@@ -1,23 +1,20 @@
 <?php
 
-echo"First Text In Tutorial Hypertext
-preprocessar"
+///var in php
 
+$name="Twanst"; //string
+$num = 12; // intger
+$charl = 'a'; // charecter Lower
+$charu = 'A'; // charecter Uper
 
+echo $name;
+echo"<br>";
+echo $num;
+echo"<br>";
+echo $charl;
+echo"<br>";
+echo $charu;
+echo"<br>";
 
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php Tutorial</title>
-</head>
-<body>
-<H1>Hello World</H1>   
- 
-
-</body>
-</html>
