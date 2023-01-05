@@ -63,11 +63,11 @@ $x=2;
 $f=23;
 $r=4;
 
-if($x>$f || $x>$r){
+if($x>$f && $x>$r){
     echo "value X Max Num Ber It Is:".$x;
-}elseif($f>$x || $f>$r){
+}elseif($f>$x && $f>$r){
     echo"Value F Max Num It Is:".$f;
-}elseif($r>$x || $r>$f){
+}elseif($r>$x && $r>$f){
     echo"Value R Max Num It Is:".$r;
 }else{
     echo "All Number Equail";
