@@ -90,4 +90,37 @@ if($p>=0 && $p<50){
 }else{
     echo"Erro Just Number InPut";
 }
+echo"<hr>";
+$x=1;
+do{
+echo"Hello World: ".$x."<br>";
+$x++;
+}while($x<10);
+
+echo"<hr>";
+$y=1;
+while($y<10){
+    echo"Hello World: ".$y."<br>";
+    $y++;
+}
+
+
+echo"<hr>";
+for($i=1;$i<10;$i++){
+    echo"Hello Codes ".$i."<br>";
+}
+echo"<hr>";
+$color=["red","blue","black","Blueyellow","light","green"];
+foreach($color as $m){
+    echo $m."<BR>";
+}
+echo"<hr>";
+
+
+
+
+
+
+
+
 ?>
