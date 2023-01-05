@@ -1,20 +1,20 @@
 <?php
 
-///var in php
+//single damation array
+$arr=["Twanst","Alina","Mikle","Dane","Kali"];
 
-$name="Twanst"; //string
-$num = 12; // intger
-$charl = 'a'; // charecter Lower
-$charu = 'A'; // charecter Uper
+echo"<h1>". $arr[0]."</h1><br>";
+//or for info array
+print_r($arr);
 
-echo $name;
-echo"<br>";
-echo $num;
-echo"<br>";
-echo $charl;
-echo"<br>";
-echo $charu;
-echo"<br>";
+//multidamation Array
 
+$aarr=[
+    ["Twanst","Kali","kolin","Kurdstan"],
+    [12,34,56,78],
+    [true,false],
+];
+echo"<br>";
+print_r($aarr);
 
 ?>
