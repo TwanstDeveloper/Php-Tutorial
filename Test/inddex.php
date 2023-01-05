@@ -3,27 +3,18 @@
 echo"Hello World Im Twanst Dev eloper Kurdish";
 echo"<br> IM Twanst Codes ";
 $color="Red";
-
 echo "<br> My Hous is ".$color." Color<br>";
 echo "<br> My car is ".$color." Color<br>";
 echo "<br> My Laptop is ".$color." Color<br>";
-
-
 $txt="Hello Twanst Codes In Github";
 $x=5;
 $y=21;
-
 echo "<br> this is Result= ".$x+$y."<br>";
-
 $TXT="<b> PHP !</b>";
-
 echo "Im Love Learn ".$TXT." Easy<br>";
-
 echo"<hr>";
 //Idea Conditioanl In Php
-
 // write programing in php for conditional date time now Day or night
-
 // first just Day
 $t=date("H");
 if($t<"20"){
@@ -47,7 +38,6 @@ if($age>=18){
     echo"Please try again For Age 18 or more";
 }
 echo"<hr>";
-
 // write programing in php For Odd and even number
 $num1=100;
 
@@ -58,11 +48,9 @@ if($num1 %2==0){
 }
 echo"<hr>";
 // write programiing in php Max number Bettwin Three Number
-
 $x=2;
 $f=23;
 $r=4;
-
 if($x>$f && $x>$r){
     echo "value X Max Num Ber It Is:".$x;
 }elseif($f>$x && $f>$r){
@@ -96,15 +84,12 @@ do{
 echo"Hello World: ".$x."<br>";
 $x++;
 }while($x<10);
-
 echo"<hr>";
 $y=1;
 while($y<10){
     echo"Hello World: ".$y."<br>";
     $y++;
 }
-
-
 echo"<hr>";
 for($i=1;$i<10;$i++){
     echo"Hello Codes ".$i."<br>";
@@ -115,9 +100,6 @@ foreach($color as $m){
     echo $m."<BR>";
 }
 echo"<hr>";
-
-
-
 function twanst(){
    for($i=0;$i<=9;$i++){
     echo"Twanst Developer <br>";
@@ -130,5 +112,4 @@ echo $q+$l;
 }
 result(3,4);
 echo"<hr>";
-
 ?>
