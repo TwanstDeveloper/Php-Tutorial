@@ -2,27 +2,33 @@
 include 'nav.php';
 ?>
 <?php
-$error=['result'=>''];
+$errors=['email'=>'','password'=>''];
 if(isset($_POST['btn'])){
 
-   $us=htmlspecialchars($_POST['u']);
-   $pass=htmlspecialchars($_POST['p']);
-   if(empty($us) || empty($pass)){
-    $error['result']="Tkaia xanakan Prbkawa";
-   }
- elseif (!filter_var($us, FILTER_VALIDATE_EMAIL)) {
-    $error['result'] = "Invalid email format";
-}
-else{
-    echo "success";
-}
+   $email=htmlspecialchars($_POST['email']);
+   $password=htmlspecialchars($_POST['password']);
+  if(empty($email)){
+    $errors['email']="xanaka batalla";
+  }
+  elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  $errors['email']= "Invalid email format";
+  }
+  if(empty($password)){
+    $errors['password']="xanaka batalla";
+  }elseif($password>=8){
+$errors['password']="paswwordakat la waza";
+  }
+  if(!array_filter($errors)){
+    header("location:about.php");
+  }
 
 }
 
 ?>
 <form action="inddex.php" method="post">
-    <p class="alert alert-white text-danger"><?php $error=['result'];?></p>
-        <input type="email" placeholder="userame" name="u" ><br>
-        <input type="pass" placeholder="Password" name="p"><BR>
+        <input type="email" placeholder="userame" name="email" ><br>
+        <p class="alert alert-white text-danger"><?php $errors=['email']; ?></p>
+        <input type="pass" placeholder="Password" name="password"><BR>
+        <p class="alert alert-white text-danger"><?php $errors=['password'];?></p>
         <button name="btn">Login</button>
     </form>
